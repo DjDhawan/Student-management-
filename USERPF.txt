@@ -1,0 +1,9 @@
+                                            UNIQUE
+                R USRFMT
+                  UID            5P 0       COLHDG('USER ID')
+                  UNAME         22A         COLHDG('USER NAME')
+                  UPSW          10A         COLHDG('USER PSW')
+                  UROLE         10A         COLHDG('USER ROLE')
+                  UCRTTS          Z         COLHDG('CREATED TIMESTAMP')
+                  UUPDTS          Z         COLHDG('UPDATED TIMESTAMP')
+                K UID

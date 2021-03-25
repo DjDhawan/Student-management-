@@ -1,0 +1,63 @@
+     A*%%TS  SD  20200602  130351  PITC109     REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R S01FMT
+     A*%%TS  SD  20200601  133556  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'Refresh')
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A                                  1 67USER
+     A                                  1 28'Student Management System'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(YLW)
+     A                                  7 24'Enter your login option:'
+     A                                  9 24'1  Admin login'
+     A                                 11 24'2  Student login'
+     A                                 14 24'Option ='
+     A            INPOPT         1S 0I 14 34
+     A                                 21 14'F3 = Exit'
+     A                                 21 39'F5 = Refresh'
+     A            EMSG01        40   O 17 23COLOR(RED)
+     A          R S02FMT
+     A*%%TS  SD  20200601  140149  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'Refresh')
+     A                                      CA12(12 'Back')
+     A                                  8 18'User ID.........:'
+     A                                 10 18'Password........:'
+     A            USRID          5S 0I  8 37
+     A            PSW           10A  I 10 37DSPATR(ND)
+     A                                  2 35'Admin Login'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  2  2DATE
+     A                                      EDTCDE(Y)
+     A                                  3  2TIME
+     A                                  2 66USER
+     A            EMSG02        40A  O 16 13COLOR(RED)
+     A                                 21 10'F3 = Exit'
+     A                                 21 29'F5 = Refresh'
+     A                                 21 55'F12 = Back'
+     A          R S03FMT
+     A*%%TS  SD  20200602  130351  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'Refresh')
+     A                                      CA12(12 'Back')
+     A                                  8 18'User ID.........:'
+     A                                 10 18'Password........:'
+     A            USRID          5S 0I  8 37
+     A            PSW           10A  I 10 37DSPATR(ND)
+     A                                  2  2DATE
+     A                                      EDTCDE(Y)
+     A                                  3  2TIME
+     A                                  2 66USER
+     A            EMSG03        40A  O 16 13COLOR(RED)
+     A                                 21 10'F3 = Exit'
+     A                                 21 29'F5 = Refresh'
+     A                                 21 55'F12 = Back'
+     A                                  2 32'Student Login'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)

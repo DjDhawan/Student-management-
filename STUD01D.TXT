@@ -1,0 +1,44 @@
+     A*%%TS  SD  20200519  154912  PITC109     REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R HEADER
+     A*%%TS  SD  20200519  143350  PITC109     REL-V7R3M0  5770-WDS
+     A                                      OVERLAY
+     A                                  2  1DATE
+     A                                      EDTCDE(Y)
+     A                                  3  1TIME
+     A                                  4  1USER
+     A                                  2 33'STUDENT ENQUIRY'
+     A                                      DSPATR(HI)
+     A                                      COLOR(WHT)
+     A                                      DSPATR(UL)
+     A          R FOOTER
+     A*%%TS  SD  20200519  143350  PITC109     REL-V7R3M0  5770-WDS
+     A                                      OVERLAY
+     A                                 22 18'F3 = Exit'
+     A                                 22 34'F5 = Refresh'
+     A                                 22 53'F12 = Back'
+     A          R S01FMT
+     A*%%TS  SD  20200519  154352  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'Refresh')
+     A                                      CA12(12 'Back')
+     A                                      OVERLAY
+     A                                  9 20'Enter Student ID...:'
+     A            ERR           45A  O 13 17COLOR(RED)
+     A            STUDID         5  0I  9 42
+     A          R S02FMT
+     A*%%TS  SD  20200519  154912  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA05(05 'Refresh')
+     A                                      CA12(12 'Back')
+     A                                      OVERLAY
+     A                                  9 21'Student detail..:'
+     A                                 11 26'ID.........:'
+     A            FNAME         20A  O 13 40
+     A            ID             5S 0O 11 40
+     A                                 13 25'First name..:'
+     A                                 15 25'Last name...:'
+     A            LNAME         20A  O 15 40
+     A                                 17 26'Age........:'
+     A            SAGE           3S 0O 17 40
