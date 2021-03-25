@@ -1,1 +1,1 @@
-# Student-management-
+# Student-management project
